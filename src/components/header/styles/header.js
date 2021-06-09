@@ -4,7 +4,7 @@ import { Link as ReactRouterLink } from 'react-router-dom';
 export const Background = styled.div `
 display: flex;
 flex-direction: column;
-background: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.35)), url(${({ src }) => (src ? `../images/misc/${src}.png` : '../images/misc/home-bg.jpg')}) top left / cover
+background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(${({ src }) => (src ? `../images/misc/${src}.png` : '../images/misc/home-bg.jpg')}) top left / cover
   no-repeat;
 @media (max-width: 1100px) {
   ${({ dontShowOnSmallViewPort }) => dontShowOnSmallViewPort && `background: none;`}
@@ -200,7 +200,7 @@ export const Profile = styled.div`
   }
 `;
 export const PlayButton = styled.button`
-  box-shadow: 0 0.6vw 1vw -0.4vw rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0.6vw 1vw -0.4vw rgba(0, 0, 0, 0.7);
   background-color: #e6e6e6;
   color: #000;
   border-width: 0;
