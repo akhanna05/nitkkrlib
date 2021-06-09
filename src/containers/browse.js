@@ -5,7 +5,7 @@ import { FooterContainer } from "./footer";
 import { FirebaseContext } from "../context/firebase";
 import { Card, Header, Loading, Player } from "../components";
 import * as ROUTES from "../constants/routes";
-import logo from "../logo.svg";
+import logo from "../nitkkrlib.png";
 
 export function BrowseContainer({ slides }) {
   const [category, setCategory] = useState("lectures");
@@ -45,10 +45,10 @@ export function BrowseContainer({ slides }) {
     <>
       {loading ? <Loading src={user.photoURL} /> : <Loading.ReleaseBody />}
 
-      <Header src="joker1" dontShowOnSmallViewPort>
+      <Header src="nitkkr" dontShowOnSmallViewPort>
         <Header.Frame>
           <Header.Group>
-            <Header.Logo to={ROUTES.HOME} src={logo} alt="Netflix" />
+            <Header.Logo to={ROUTES.HOME} src={logo} alt="nitkkrlib" />
             <Header.TextLink
               active={category === "lectures" ? "true" : "false"}
               onClick={() => setCategory("lectures")}
@@ -85,15 +85,12 @@ export function BrowseContainer({ slides }) {
         </Header.Frame>
 
         <Header.Feature>
-          <Header.FeatureCallOut>Watch Joker Now</Header.FeatureCallOut>
+          <Header.FeatureCallOut>NITKKR Video Library</Header.FeatureCallOut>
           <Header.Text>
-            Forever alone in a crowd, failed comedian Arthur Fleck seeks
-            connection as he walks the streets of Gotham City. Arthur wears two
-            masks -- the one he paints for his day job as a clown, and the guise
-            he projects in a futile attempt to feel like he's part of the world
-            around him.
+          Stream all the lectures and practicals from the subject teachers of NIT Kurukshetra. Don't misuse them. Copyright NITKKR
+
           </Header.Text>
-          <Header.PlayButton>Play</Header.PlayButton>
+          
         </Header.Feature>
       </Header>
 

@@ -12,7 +12,6 @@ export const Title = styled.p `
 export const Container = styled.div `
   display: flex;
   flex-direction: column;
-  width: 200px;
   margin-bottom: 50px;
   > ${Title} {
     @media (max-width: 1000px) {
@@ -63,6 +62,10 @@ export const Text = styled.p `
 export const Entities = styled.div `
   display: flex;
   flex-direction: row;
+  overflow: scroll;
+  &::-webkit-scrollbar{
+    height: 0;
+  }
 `;
 
 export const Meta = styled.div `
@@ -75,7 +78,7 @@ export const Meta = styled.div `
 
 export const Image = styled.img `
   border: 0;
-  width: 100%;
+  width: 30vw;
   max-width: 305px;
   cursor: pointer;
   height: auto;
@@ -91,7 +94,7 @@ export const Item = styled.div `
   cursor: pointer;
   transition: transform 0.2s;
   &:hover {
-    transform: scale(1.3);
+    transform: scale(1.1);
     z-index: 99;
   }
   @media (min-width: 1200px) {
