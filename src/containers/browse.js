@@ -41,6 +41,16 @@ export function BrowseContainer({ slides }) {
     }
   }, [searchTerm]);
 
+  function getRandomItem() {
+    const arr=[
+      "https://www.pwc.in/assets/images/industries/healthcare/strategy-2016.jpg",
+      "https://tibet.net/wp-content/uploads/2020/04/20200401_125744.png",
+      "https://www.thehindu.com/news/cities/chennai/c9kxna/article31839728.ece/alternates/FREE_435/16JUNETH--ONLINE",
+      "http://www.tvdaijiworld.com/images9/shp_17320_elessons1.jpg"
+    ]
+    return arr[Math.floor(Math.random() * arr.length)]
+}
+
   return profile.displayName ? (
     <>
       {loading ? <Loading src={user.photoURL} /> : <Loading.ReleaseBody />}
@@ -102,7 +112,7 @@ export function BrowseContainer({ slides }) {
               {slideItem.data.map((item) => (
                 <Card.Item key={item.docId} item={item}>
                   <Card.Image
-                    src={item.image}
+                    src={"https://www.pwc.in/assets/images/industries/healthcare/strategy-2016.jpg"}
                   />
                   <Card.Meta>
                     <Card.SubTitle>{item.title}</Card.SubTitle>

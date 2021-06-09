@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { BrowseContainer } from "../containers/browse";
 import { useContent } from "../hooks";
 import selectionFilter from "../utils/selection-filter";
@@ -6,7 +6,9 @@ import selectionFilter from "../utils/selection-filter";
 export default function Browse() {
   const [lectures, setLectures] = useState([])
   const [practicals, setPracticals] = useState([])
-   fetch('https://e-classes-c4a7a-default-rtdb.firebaseio.com/practicals.json')
+  useEffect(() => {
+    
+    fetch('https://e-classes-c4a7a-default-rtdb.firebaseio.com/practicals.json')
   .then((res) => res.json())
   .then((data) => {
     const practicals = Object.values(data)[0].lectures;
@@ -18,6 +20,8 @@ export default function Browse() {
     const lectures = Object.values(data)[0];
    setLectures(lectures)
   });
+  }, [])
+  
   
   const slides = selectionFilter({ lectures, practicals });
 
