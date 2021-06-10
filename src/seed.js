@@ -140,7 +140,7 @@ export function seedDatabase(firebase) {
 
     // firebase.firestore().collection('lectures').add({
     //   id: getUUID(),
-    //   title: '8085 Pin Description',
+    //   title: '8085 Pin Description'Measurement
     //   description:
     //     "Lecture series on Microprocessor and Microcontroller-8085 Pin Description by Prof. Trailokya Nath Sasamal, Dept of ECE, NIT Kurushetra",
     //   genre: 'microprocessor and microcontroller',
@@ -422,7 +422,7 @@ export function seedDatabase(firebase) {
         title: 'PSK',
         description:
           "Practicals series on Measurememnt and Instrument-PSK by Prof. Umesh Ghanekar, Dept of ECE, NIT Kurushetra",
-        genre: 'Measurememnt and Instrument',
+        genre: 'Measurement and Instrument',
         image: IMAGE_URL
       });
       firebase.firestore().collection('practicals').add({
@@ -430,7 +430,7 @@ export function seedDatabase(firebase) {
         title: 'ASK',
         description:
           "Practicals series on Measurememnt and Instrument-ASK by Prof. Umesh Ghanekar, Dept of ECE, NIT Kurushetra",
-        genre: 'Measurememnt and Instreument',
+        genre: 'Measurement and Instreument',
         image: IMAGE_URL,
       });
       firebase.firestore().collection('practicals').add({
@@ -438,7 +438,7 @@ export function seedDatabase(firebase) {
         title: 'FSK',
         description:
           "Practicals series on Measurememnt and Instrument-FSK by Prof. Umesh Ghanekar, Dept of ECE, NIT Kurushetra",
-        genre: 'Measurememnt and Instruement',
+        genre: 'Measurement and Instruement',
         image: IMAGE_URL,
       });
       firebase.firestore().collection('practicals').add({
@@ -446,7 +446,7 @@ export function seedDatabase(firebase) {
         title: 'BPSK',
         description:
           "Practicals series on Measurememnt and Instrument-BPSK by Prof. Umesh Ghanekar, Dept of ECE, NIT Kurushetra",
-        genre: 'Measurememnt and Instrument',
+        genre: 'Measurement and Instrument',
         image: IMAGE_URL,
       });
       firebase.firestore().collection('practicals').add({
@@ -454,7 +454,7 @@ export function seedDatabase(firebase) {
         title: 'QPSK',
         description:
           "Practicals series on Measurememnt and Instrument-QPSK by Prof. Umesh Ghanekar, Dept of ECE, NIT Kurushetra",
-        genre: 'Measurememnt and Instrument',
+        genre: 'Measurement and Instrument',
         image: IMAGE_URL,
       });
    
